@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://negotiator-map.herokuapp.com/
 
-Things you may want to cover:
+A web page for finding the commuting distance between points in London.
 
-* Ruby version
+Simply click on points on the map, up to 10 points, then specify the time spent at each point (defaults to 30), and calculate journey times.
 
-* System dependencies
+Enclosed with a square of coordinates to stop points which are wildly not London.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Most code is in assets/application.js and main#getResults controller and main#home view.
