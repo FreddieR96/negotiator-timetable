@@ -99,7 +99,7 @@ function getResults() {
 			}
 			document.getElementById("results-div").innerHTML = resultContent;
 		}
-		request.open("GET", "getResults?" + "date_time=" + dateTimeString + "&" + getDestinationTimes() + queryString, true)
+		request.open("GET", "main/getResults?" + "date_time=" + dateTimeString + "&" + getDestinationTimes() + queryString, true)
 		request.send(null);
 	}
 	}
