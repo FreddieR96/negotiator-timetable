@@ -1,0 +1,21 @@
+<div id = "title"><h1>Travel Times in London</h1></div>
+<div id = "map"></div>
+<ul id = "results-box"></ul>
+<div id = "buttons">
+<div id = "deletelast">Delete last marker</div>
+<div id = "evaltime">Calculate journey times</div>
+</div>
+<div id = "departureDateTime">
+<%= label_tag(:time, "Time of departure (HH:MM)") %>
+<%= text_field_tag :time, nil, maxlength: 5 %>
+<%= label_tag(:date, "Date of departure (DD/MM/YYYY)") %>
+<%= text_field_tag :date, nil, maxlength: 10 %>
+</div>
+<% (1..10).to_a.each do |x| %>
+<% timeField = "time" + x.to_s %>
+<div class = "timebar">
+<%= label_tag(timeField.to_sym, "Time spent at destination #{x} (minutes)", class: "timeform", id: "timelabel#{x}") %>
+<%= text_field_tag timeField.to_sym, nil, maxlength: 3, class: "timeform" %>
+</div>
+<% end %>
+<div id = "results-div"></div>

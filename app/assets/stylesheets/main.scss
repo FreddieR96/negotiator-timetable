@@ -1,0 +1,68 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background-color: #fafaff;
+}
+h1 {
+	text-decoration: underline;
+}
+#title {
+	text-align: center;
+}
+#map {
+	margin-top: 40px;
+	height: 37.5vh;
+	width: 25vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+#deletelast, #evaltime {
+	height: 32px;
+	border-radius: 8px;
+	padding-top: 5px;
+	cursor: pointer;
+	float: left;
+	text-align: center;
+}
+#deletelast {
+	width: 8vw;
+	background-color: blue;
+	margin-left: 4vw;
+	margin-right: 2vw;
+}
+#evaltime {
+	width: 9vw;
+	background-color: purple;
+}
+#buttons:after, #departureDateTime:after, .timebar:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#buttons {
+	margin-bottom: 30px;
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#departureDateTime:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#title, #results-div {
+	color: #604020;
+	font-family: "Arial Black", sans-serif;
+}
+.topresult, .bottomresult {
+	text-align: right;
+	max-width: 20vw;
+}
+.topresult {
+	margin-top: 30px;
+}
+.timeform {
+	margin-top: 20px;
+}

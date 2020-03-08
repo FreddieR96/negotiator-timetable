@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: MyString
+  longitude: MyString
+  marker: MyString
+  arrival_time: 2020-02-15 16:22:57
+  time_there: 1
+
+two:
+  latitude: MyString
+  longitude: MyString
+  marker: MyString
+  arrival_time: 2020-02-15 16:22:57
+  time_there: 1
